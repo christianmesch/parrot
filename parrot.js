@@ -42,12 +42,14 @@ function parrot() {
     for (var row = 0; row < 5; row++) {
         var tmp = '';
         for (let c of text) {
-            tmp += alphabet[c.toLowerCase()][row].replace(new RegExp('#', 'g'), primary).replace(new RegExp('¤', 'g'), secondary);
+            tmp += alphabet[c.toLowerCase()][row]
+                .replace(new RegExp('#', 'g'), primary)
+                .replace(new RegExp('¤', 'g'), secondary);
         }
         
         result += tmp + '\n';
     }
 
-    document.getElementById('result').value = result;
+    document.getElementById('result').value = result.trim();
 }
 
