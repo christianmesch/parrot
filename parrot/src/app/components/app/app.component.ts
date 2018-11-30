@@ -11,7 +11,7 @@ import { Data } from 'src/app/models/data.model';
 
 export class AppComponent {
 
-    private data: Data = {
+    public data: Data = {
         text: 'parrot',
         primary: ':parrot:',
         secondary: ':invisibleparrot:',
