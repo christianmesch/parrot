@@ -1,0 +1,9 @@
+<div>
+    <input type="text" [(ngModel)]="data.text">
+    <input type="text" [(ngModel)]="data.primary">
+    <input type="text" [(ngModel)]="data.secondary">
+    <input type="button" (click)="parrotify()" value="Parrot me">
+    <textarea id="result">{{data.result}}</textarea>
+</div>
+
+<router-outlet></router-outlet>
